@@ -1,20 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
-vector<int> corpFlightBookings(vector<vector<int>>& a, int n) {
-       vector <int>sol(n,0);
-       for(int i = 0 ; i<a.size() ; i++){
-           sol[a[i][0]-1]+=a[i][2];
-           if(a[i][1]<n)sol[a[i][1]]-=a[i][2];
-       }
-
-       for(int i = 1 ; i<n;i++){
-           sol[i]=sol[i-1]+sol[i];
-       }
-       return sol;
+int pivotIndex(vector<int>& nums) {
+        int n= nums.size();
+        vector<int>prefix(n);
+        vector<int>suffix(n);
+        prefix[0]=nums[0];
+        suffix[n-1]=nums[n-1];
+        for(int i =1; i<n;i++)prefix[i]=prefix[i-1]+nums[i];
+        for(int i = n-2;i>=0;i--)suffix[i]=suffix[i+1]+nums[i];
+        for(int i = 0 ;i<n;i++)if(prefix[i]==suffix[i])return i ;
+     return -1;
     }
 int main(){
-    vector<vector<int>>booking;
-    booking={{1,2,10},{2,3,20},{2,5,25}};
-    int n =5;
-    corpFlightBookings(booking,n);
+    vector<int>nums;
+    nums = {1,7,3,6,5,6};
+    pivotIndex(nums);
 }
