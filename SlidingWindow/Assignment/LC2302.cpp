@@ -30,5 +30,5 @@ using namespace std;
 int main(){
     vector<int>nums={2,1,4,3,5};
     long long k = 10;
-    countSubarrays(nums,k);
+    cout<<countSubarrays(nums,k);
 }
