@@ -13,7 +13,7 @@ void BinaryToDecimal(string& n){
      
 }
 int main(){
-    string n = "10010";
+    string n = "11000";
     BinaryToDecimal(n);
 
 }
