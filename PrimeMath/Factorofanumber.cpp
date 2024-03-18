@@ -11,6 +11,6 @@ void printFactor(int n ){
     }
 }
 int main(){
-    int n = 60;
+    int n = 50;
     printFactor(n);
 }
