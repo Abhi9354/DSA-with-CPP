@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-int  x = 36;
+int  x = 2;
 int count = 0;
 for(int i = 2 ; i<=sqrt(x);i++) {
     if(x%i==0)count++;
