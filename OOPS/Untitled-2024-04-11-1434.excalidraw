@@ -1,0 +1,448 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "SJ8oHqynnR4QxN_8ujx5C",
+      "type": "text",
+      "x": 303,
+      "y": 308.80000000000007,
+      "width": 688.75,
+      "height": 1729.6,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 2003792551,
+      "version": 13,
+      "versionNonce": 159833159,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "2ovnj6E3x8tFtuP8kIHWs",
+          "type": "arrow"
+        },
+        {
+          "id": "_dD8-fIGpzaET4eeUqnNn",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1712826585784,
+      "link": null,
+      "locked": false,
+      "text": "\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Gun\n{\npublic:\n    int ammo;\n    int damage;\n};\nclass Player\n{\nprivate:\n class Helmet\n    {\n        private:\n        int health;\n        public:\n        void setHealth(int health)\n        {\n            this->health = health;\n        }\n        int getHealth()\n        {\n            return health;\n        }   \n    };\n    int health;\n    int age;\n    Gun gun; // class ke ander object banayenge\n    Helmet helmet;\n   \npublic:\n    void setHealth(int health)\n    {\n        this->health = health;\n    }\n    void setAge(int age)\n    {\n        this->age = age;\n    }\n    int getHealth()\n    {\n        return health;\n    }\n    int getAge()\n    {\n        return age;\n    }\n\n    Gun getGun()\n    {\n        return gun;\n    }\n\n    void setGun(Gun gun)\n    {\n        this->gun = gun;\n    }\n\n\n\n    void setHelmet(int health){\n        Helmet *helmet= new Helmet;//this function make an object of class which is inside the class\n        helmet->setHealth(health);\n        this->helmet= *helmet;\n    }\n    void getHelmet(){\n        cout << helmet.getHealth() << endl;\n        \n    }\n};\nint main()\n{\n    Gun Akm;\n    Akm.ammo = 10;\n    Akm.damage = 100;\n\n    Player Abhishek;\n    Abhishek.setHealth(100);\n    Abhishek.setAge(20);\n    cout << Abhishek.getHealth() << endl;\n    cout << Abhishek.getAge() << endl;\n\n    Abhishek.setGun(Akm); // passing object as parameter\n    cout << Abhishek.getGun().ammo << endl;\n    cout << Abhishek.getGun().damage << endl;\n\n    Abhishek.setHelmet(92);\n     Abhishek.getHelmet();\n    \n\n}",
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "\n\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass Gun\n{\npublic:\n    int ammo;\n    int damage;\n};\nclass Player\n{\nprivate:\n class Helmet\n    {\n        private:\n        int health;\n        public:\n        void setHealth(int health)\n        {\n            this->health = health;\n        }\n        int getHealth()\n        {\n            return health;\n        }   \n    };\n    int health;\n    int age;\n    Gun gun; // class ke ander object banayenge\n    Helmet helmet;\n   \npublic:\n    void setHealth(int health)\n    {\n        this->health = health;\n    }\n    void setAge(int age)\n    {\n        this->age = age;\n    }\n    int getHealth()\n    {\n        return health;\n    }\n    int getAge()\n    {\n        return age;\n    }\n\n    Gun getGun()\n    {\n        return gun;\n    }\n\n    void setGun(Gun gun)\n    {\n        this->gun = gun;\n    }\n\n\n\n    void setHelmet(int health){\n        Helmet *helmet= new Helmet;//this function make an object of class which is inside the class\n        helmet->setHealth(health);\n        this->helmet= *helmet;\n    }\n    void getHelmet(){\n        cout << helmet.getHealth() << endl;\n        \n    }\n};\nint main()\n{\n    Gun Akm;\n    Akm.ammo = 10;\n    Akm.damage = 100;\n\n    Player Abhishek;\n    Abhishek.setHealth(100);\n    Abhishek.setAge(20);\n    cout << Abhishek.getHealth() << endl;\n    cout << Abhishek.getAge() << endl;\n\n    Abhishek.setGun(Akm); // passing object as parameter\n    cout << Abhishek.getGun().ammo << endl;\n    cout << Abhishek.getGun().damage << endl;\n\n    Abhishek.setHelmet(92);\n     Abhishek.getHelmet();\n    \n\n}",
+      "lineHeight": 1.15
+    },
+    {
+      "id": "JmMhJBxlpKO8ev4RJ5XrW",
+      "type": "arrow",
+      "x": 388.5000000000002,
+      "y": 405.00000000000006,
+      "width": 1421.9999999999998,
+      "height": 1282,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1696278985,
+      "version": 525,
+      "versionNonce": 2119196711,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826764282,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1421.9999999999998,
+          978
+        ],
+        [
+          26,
+          1282
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "2ovnj6E3x8tFtuP8kIHWs",
+      "type": "arrow",
+      "x": 288.5000000000002,
+      "y": 517,
+      "width": 713.9999999999999,
+      "height": 1249.9999999999995,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2096780967,
+      "version": 448,
+      "versionNonce": 911650121,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826774667,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -695.9999999999999,
+          590
+        ],
+        [
+          18,
+          1249.9999999999995
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "SJ8oHqynnR4QxN_8ujx5C",
+        "focus": 0.830635647633679,
+        "gap": 14.499999999999773
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "9lb3NAQLJSpVOp2W8fqsl",
+      "type": "arrow",
+      "x": 488.5000000000002,
+      "y": 1882.9999999999995,
+      "width": 805.9999999999998,
+      "height": 509.99999999999955,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 149542791,
+      "version": 340,
+      "versionNonce": 1951639175,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826789793,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          799.9999999999998,
+          -333.99999999999955
+        ],
+        [
+          -6,
+          -509.99999999999955
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "dm6o-xuHhK066RRBuBEMg",
+      "type": "arrow",
+      "x": 630.5,
+      "y": 1904.9999999999995,
+      "width": 1043.9999999999998,
+      "height": 635.9999999999995,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1477004007,
+      "version": 232,
+      "versionNonce": 998437063,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826794013,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          840,
+          -349.99999999999955
+        ],
+        [
+          -203.99999999999977,
+          -635.9999999999995
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "_dD8-fIGpzaET4eeUqnNn",
+      "type": "arrow",
+      "x": 294.5000000000002,
+      "y": 1952.9999999999995,
+      "width": 651.9999999999999,
+      "height": 475.99999999999955,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 212744745,
+      "version": 444,
+      "versionNonce": 2061545225,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826779586,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -637.9999999999999,
+          -251.99999999999955
+        ],
+        [
+          14,
+          -475.99999999999955
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "SJ8oHqynnR4QxN_8ujx5C",
+        "focus": -0.9180248099956627,
+        "gap": 8.499999999999773
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "vHAnZnnuOaceTFZ8k6ugf",
+      "type": "arrow",
+      "x": 320.5000000000002,
+      "y": 1974.9999999999995,
+      "width": 226,
+      "height": 371.99999999999955,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2123551463,
+      "version": 234,
+      "versionNonce": 878741799,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826784802,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -224,
+          -226
+        ],
+        [
+          2,
+          -371.99999999999955
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "8XCKo4z291spnhBZ0cunP",
+      "type": "arrow",
+      "x": 534.5000000000002,
+      "y": 1517,
+      "width": 363.9999999999998,
+      "height": 832,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1356926249,
+      "version": 306,
+      "versionNonce": 687321639,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826801706,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          335.9999999999998,
+          -454
+        ],
+        [
+          -28,
+          -832
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "krbO0Ps0m2NyEMM6cQg0V",
+      "type": "arrow",
+      "x": 572.5000000000002,
+      "y": 1585,
+      "width": 599.9999999999998,
+      "height": 800,
+      "angle": 0,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1301487849,
+      "version": 144,
+      "versionNonce": 1953125897,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1712826797825,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          483.9999999999998,
+          -524
+        ],
+        [
+          -116,
+          -800
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

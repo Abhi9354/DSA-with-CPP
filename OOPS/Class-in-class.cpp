@@ -12,10 +12,7 @@ public:
 class Player
 {
 private:
-    int health;
-    int age;
-    Gun gun; // class ke ander object banayenge
-    class Helmet
+ class Helmet
     {
         private:
         int health;
@@ -29,6 +26,11 @@ private:
             return health;
         }   
     };
+    int health;
+    int age;
+    Gun gun; // class ke ander object banayenge
+    Helmet helmet;
+   
 
 
 public:
@@ -58,6 +60,18 @@ public:
     {
         this->gun = gun;
     }
+
+
+
+    void setHelmet(int health){
+        Helmet *helmet= new Helmet;//this function make an object of class which is inside the class
+        helmet->setHealth(health);
+        this->helmet= *helmet;
+    }
+    void getHelmet(){
+        cout << helmet.getHealth() << endl;
+        
+    }
 };
 int main()
 {
@@ -74,4 +88,9 @@ int main()
     Abhishek.setGun(Akm); // passing object as parameter
     cout << Abhishek.getGun().ammo << endl;
     cout << Abhishek.getGun().damage << endl;
+
+    Abhishek.setHelmet(92);
+     Abhishek.getHelmet();
+    
+
 }
