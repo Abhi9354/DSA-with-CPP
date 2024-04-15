@@ -9,5 +9,6 @@ Bike(){
 
 };
 int main(){
-    Bike tvs;
+    Bike tvs;//jab object banta hai tab constructor call hota hai
+    return 0;
 }
