@@ -2,16 +2,22 @@
 using namespace std;
 
 class Bike {
+   public:
+    static int noOfBikes;//this belongs to class not object and u can access it without creating object
     int tyresize;
     int Engine;
     
 };
-void add(){
-        int b =10 ;
-        cout<<b<<endl;
-        b++;
-    }
+int Bike::noOfBikes=2;//ye sab object ke liye same hai
+// void add(){
+//        static int b =10 ;//ek hi baar memory assign hogi
+//         cout<<b<<endl;
+//         b++;
+//     }
 int main(){
-    add();
-    add();
-}
+    // add();
+    // add();
+    // add();
+    Bike Tvs;
+    cout<<Tvs.noOfBikes<<endl;
+}   
