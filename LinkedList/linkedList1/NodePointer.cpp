@@ -21,7 +21,7 @@ int main(){
     b->next=c;
     c->next=d;
     Node* temp=a;
-    while(temp->next!=NULL){
+    while(temp!=NULL){
        cout<<temp->val<<" ";
        temp=temp->next;
     }
