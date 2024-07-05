@@ -47,18 +47,17 @@ size++;
 }
 
 void insertAtIdx(int idx,int val){
-Node* temp= new Node(val);
-if(idx==0){
+    if(idx<0 ||idx>size)cout<<"invalid"<<endl;
+else if(idx==0){
     insertAtBeginning(val);
 }
-if(idx==size){
+else if(idx==size){
     insertAtEnd(val);
 }
 else{
-    temp->next=head;
-    head= temp;
+    Node* temp = new Node(60);
 }
-size++;
+
 }
 
 void display(){
