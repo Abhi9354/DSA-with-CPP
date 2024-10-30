@@ -2,6 +2,11 @@
 using namespace std;
 
 class Node{
+  private:
+  ~Node(){
+   cout<<"called";
+}
+
 public:
   int val;
   Node* next;
@@ -41,3 +46,14 @@ int main(){
         }
         
 }
+
+
+
+// #include <iostream>
+// using namespace std;
+ 
+// class Test {
+// private:
+//     ~Test() {}
+// };
+// int main() { Test* t = new Test; }

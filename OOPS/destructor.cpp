@@ -24,6 +24,7 @@ int main()
         Bike honda(15);
         cout << "honda" << honda.tyresize << endl;
     }
+    
     cout << tvs.tyresize << endl;
     cout << RE.tyresize << endl;
     // jaise hi object apne sccope se bhr jayenge desctructor call hota hai
