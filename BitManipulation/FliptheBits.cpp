@@ -1,4 +1,4 @@
-
+//given an integer n , flip all the bits if the given bit is 1 change it to 0 and vice versa
 
 #include <bits/stdc++.h>
 using namespace std;
