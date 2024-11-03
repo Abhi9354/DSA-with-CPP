@@ -11,7 +11,7 @@ while(n!=0){
     ans=n;
     n=n&(n-1);
 }    
-cout<<ans;
+// cout<<ans;
 
 int m= 24;
 m=m|m>>1;
@@ -19,8 +19,8 @@ m=m|m>>2;
 m=m|m>>4;
 m=m|m>>8;
 m=m|m>>16;
-cout<<((m+1)>>1);
-
+cout<<((m+1));
+// cout<<m;
 
 
 
